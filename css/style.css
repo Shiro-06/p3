@@ -1,0 +1,430 @@
+/****** General ***********/
+* {
+    font-family: 'Raleway', sans-serif;
+}
+
+body {
+    overflow-x: hidden;
+    margin: 0;
+    position: relative;
+}
+
+.logo {
+    display: flex;
+    padding: 30px 0;
+    flex-direction: column;
+    width: 61.09px;
+    height: 19px;
+}
+
+.menuContainer {
+    display: grid;
+    grid-template-columns: auto auto;
+    flex-direction: row;
+    gap: 68px;
+}
+
+.menuContainer a:hover {
+    color: #0065FC;
+    border-top: 3.5px solid #0065FC;
+    border-bottom: none;
+}
+
+.menuContainer a {
+    text-decoration-line: none;
+    padding-top: 20px;
+    border-top: 3.5px solid transparent;
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.dotLocation {
+    display: flex;
+    background-color: #F2F2F2;
+    width: 50px;
+    height: 49px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px 0px 0px 15px;
+}
+
+button {
+    background:#0065FC;
+    box-shadow: none;
+    outline:none;
+    border:none;
+}
+
+.searchBar {
+    display: flex;
+    border-color: #F2F2F2;
+    margin-top: 35px;
+    margin-bottom: 35px;
+    position: relative;
+}
+.searchButtons {
+        padding: 15px 16px;
+    background: var(--blue, #0065FC);
+    color: white;
+    border-radius: 0px 15px 15px 0px;
+    font-size: medium;
+}
+.searchMob{
+    border-radius: 15px;
+    height: 100%;
+    aspect-ratio: 1;
+    padding: 15px 16px;
+}
+::placeholder{
+    font-weight: bolder;
+    color: black;
+    text-align: center;
+    font-size: medium;
+}
+
+.placeHold {
+    border: 2px solid #F2F2F2;
+    outline: none;
+    padding: 0 32px;
+}
+
+.filterButton {
+    display: flex;
+    border-radius: 25px;
+    font-weight: bold;
+    height: 50px;
+    padding: 4px 19px;
+    align-items: center;
+    gap: 10px;
+    background-color: white;
+    border: 2px solid #F2F2F2;
+    font-size: medium;
+    justify-content: center;
+    
+}
+
+.filterButton:hover {
+    background-color: #DEEBFF;
+}
+
+.filterButton i {
+  color: #0065fc;
+}
+
+.filterContainer {
+  display: flex;
+  gap: 10px;
+}
+
+.filterBar {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+}
+.fa-money-bill-wave,
+.fa-person,
+.fa-heart,
+.fa-fire {
+    display: flex;
+    justify-content: flex-start;
+}
+:root {
+    --main-color: #0065FC;
+    --main-bg-color: #F2F2F2;
+    --filter-bg-color: #DEEBFF;
+}
+
+.fa-solid {
+    color: var(--main-color);
+}
+
+
+.main-container {
+    width: 100%;
+    padding: 0 50px;
+    box-sizing: border-box;
+    max-width: 1440px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.section-title {
+    margin: 0;
+    font-size: 22px;
+}
+
+
+.hebergements-cards .hebergement_hotel-du-port,
+.hebergements-cards .hebergement_hotel-chez-amina,
+.hebergements-cards .hebergement_hotel-les-mouettes,
+.hebergements-cards .hebergement_hotel-de-la-mer,
+.hebergements-cards .hebergement_auberge-la-canebiere,
+.hebergements-cards .hebergement_auberge-le-panier,
+.populaires-cards .populaire_hotel-le-soleil-du-matin,
+.populaires-cards .populaire_chambres-d-hotes-au-coeur-de-l-eau,
+.populaires-cards .populaire_hotel-bleu-et-blanc {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    border-radius: 20px;
+    padding: 5px;
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+
+}
+.activites-cards .activite_vieux-port,
+.activites-cards .activite_fort-de-pomegues,
+.activites-cards .activite_parc-national-des-calanques,
+.activites-cards .activite_notre-dame-de-la-garde {
+    display: flex;
+    height: 100%;
+    flex-direction: row;
+    background-color: white;
+    border-radius: 20px;
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+}
+
+.infoLogo{
+    border: 2px solid #F2F2F2;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    text-align: center;
+    margin-top: 35px;
+}
+
+.card-title {
+    font-size: 16px;
+}
+
+.euro {
+    font-weight: 700;
+}
+
+.neutral-star {
+    color: var(--main-bg-color);
+}
+
+.afficher-plus {
+    text-decoration: black;
+    text-decoration-line: none;
+    font-weight: 700;
+    padding-top: 10px;
+    gap: 10px;
+}
+
+.cardTop,
+.cardBot {
+    display: flex;  
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 15px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+.hebergements-cards img,
+.populaires-cards img,
+.activites-cards img{
+    object-fit: cover;
+}
+/****** Hebergements And Populaires ***********/
+.hebergements-and-populaires {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hebergements-and-populaires section {
+    background-color: var(--main-bg-color);
+    border-radius: 20px;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+/****** Hebergements ***********/
+.hebergements {
+    width: 65%;
+}
+
+.hebergements-title h3{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px;
+}
+
+.hebergements-cards .hebergement_hotel-du-port,
+.hebergements-cards .hebergement_hotel-chez-amina,
+.hebergements-cards .hebergement_hotel-les-mouettes,
+.hebergements-cards .hebergement_hotel-de-la-mer,
+.hebergements-cards .hebergement_auberge-la-canebiere,
+.hebergements-cards .hebergement_auberge-le-panier { 
+    display: flex;
+    flex-direction: column;
+    margin-top: 33px;
+}
+
+.hebergements-cards img {
+    height: 133px;
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    
+}
+
+.hebergements-cards .card-content {
+    margin: 4px;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.hebergements-cards .card-rating {
+    margin-bottom: 5px;
+    padding-top: 10px;
+    position: sticky;
+}
+
+.hebergements-cards .card-title {
+    margin-top: 10px;
+    margin-bottom: 4px;
+}
+
+.hebergements-cards .card-subtitle {
+    margin: 0;
+}
+.hebergements-cards .card-txt {
+    padding-right: 26px;
+}
+/****** Populaires ***********/
+.populaires {
+    width: 32%;
+}
+
+.populaires-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.populaires-cards .populaire_hotel-le-soleil-du-matin,
+.populaires-cards .populaire_chambres-d-hotes-au-coeur-de-l-eau,
+.populaires-cards .populaire_hotel-bleu-et-blanc {
+    display: flex;
+    margin-top: 33px;
+}
+
+.populaires-cards img {
+    width: 33%;
+    height: 136px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.populaires-cards .card-content {
+    width: 67%;
+    padding-left: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.populaires-cards .card-title {
+    margin-top: 10px;
+    margin-bottom: 4px;
+}
+
+.populaires-cards .card-subtitle {
+    margin: 0;
+}
+
+.populaires-cards .card-rating {
+    margin-bottom: 5px;
+    width: 100%;
+}
+
+/* Activités */
+
+.activites {
+    
+    padding: 30px;
+}
+
+.activites-cards img {
+    height: 380px;
+    border-radius: 20px 20px 0px 0px;
+    width: 100%;
+}
+.activites-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 33px;
+    gap: 30px;
+}
+.activites-cards .activite_vieux-port,
+.activites-cards .activite_fort-de-pomegues,
+.activites-cards .activite_parc-national-des-calanques,
+.activites-cards .activite_notre-dame-de-la-garde {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.10);
+    border-radius: 20px;
+    background: var(--white, #FFF);
+}
+
+.activites-cards .card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 0px 0px 20px 20px;
+    flex: 1;
+    box-sizing: border-box;
+}
+.activites .section-title {
+    margin-top: 35px;
+}
+
+/* Footer */
+footer {
+    padding: 0 50px;
+    margin-top: 35px;
+}
+.foot-section {
+    display: flex;
+    flex-direction: row;
+    background-color: #F2F2F2;
+    justify-content: space-around;
+
+}
+
+.foot-content {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 20px;
+    align-self: stretch;
+}
+
+ul.no-bullets {
+    list-style-type: none; 
+    padding: 0; 
+    margin: 0; 
+    
+}
+
+li {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+

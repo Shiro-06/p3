@@ -1,0 +1,22 @@
+/****** Media queries ***********/
+
+/* Large desktop devices */
+@media (min-width: 1440px) {
+    .searchMob {
+        display: none;
+    }
+
+    .activites-cards .card-content {
+        padding-left: 15px;
+    }
+}
+/* Desktop devices */
+@media (min-width: 1024px) and (max-width: 1440px) {
+    .searchMob {
+        display: none;
+    }
+
+    .activites-cards .card-content {
+        padding-left: 15px;
+    }
+}
