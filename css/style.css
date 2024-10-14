@@ -53,10 +53,10 @@ nav {
 }
 
 button {
-    background:#0065FC;
+    background: #0065FC;
     box-shadow: none;
-    outline:none;
-    border:none;
+    outline: none;
+    border: none;
 }
 
 .searchBar {
@@ -66,20 +66,22 @@ button {
     margin-bottom: 35px;
     position: relative;
 }
+
 .searchButtons {
-        padding: 15px 16px;
+    padding: 15px 16px;
     background: var(--blue, #0065FC);
     color: white;
     border-radius: 0px 15px 15px 0px;
     font-size: medium;
 }
-.searchMob{
+
+.searchMob {
     border-radius: 15px;
     height: 100%;
-    aspect-ratio: 1;
     padding: 15px 16px;
 }
-::placeholder{
+
+::placeholder {
     font-weight: bolder;
     color: black;
     text-align: center;
@@ -104,7 +106,7 @@ button {
     border: 2px solid #F2F2F2;
     font-size: medium;
     justify-content: center;
-    
+
 }
 
 .filterButton:hover {
@@ -112,12 +114,12 @@ button {
 }
 
 .filterButton i {
-  color: #0065fc;
+    color: #0065fc;
 }
 
 .filterContainer {
-  display: flex;
-  gap: 10px;
+    display: flex;
+    gap: 10px;
 }
 
 .filterBar {
@@ -126,6 +128,7 @@ button {
     gap: 10px;
     align-items: center;
 }
+
 .fa-money-bill-wave,
 .fa-person,
 .fa-heart,
@@ -133,6 +136,7 @@ button {
     display: flex;
     justify-content: flex-start;
 }
+
 :root {
     --main-color: #0065FC;
     --main-bg-color: #F2F2F2;
@@ -176,6 +180,7 @@ button {
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
 
 }
+
 .activites-cards .activite_vieux-port,
 .activites-cards .activite_fort-de-pomegues,
 .activites-cards .activite_parc-national-des-calanques,
@@ -188,7 +193,7 @@ button {
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
 }
 
-.infoLogo{
+.infoLogo {
     border: 2px solid #F2F2F2;
     border-radius: 50%;
     width: 20px;
@@ -220,7 +225,8 @@ button {
 
 .cardTop,
 .cardBot {
-    display: flex;  
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     flex-direction: row;
     justify-content: space-around;
     gap: 15px;
@@ -230,11 +236,13 @@ a {
     text-decoration: none;
     color: inherit;
 }
+
 .hebergements-cards img,
 .populaires-cards img,
-.activites-cards img{
+.activites-cards img {
     object-fit: cover;
 }
+
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
     display: flex;
@@ -253,7 +261,7 @@ a {
     width: 65%;
 }
 
-.hebergements-title h3{
+.hebergements-title h3 {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -265,7 +273,7 @@ a {
 .hebergements-cards .hebergement_hotel-les-mouettes,
 .hebergements-cards .hebergement_hotel-de-la-mer,
 .hebergements-cards .hebergement_auberge-la-canebiere,
-.hebergements-cards .hebergement_auberge-le-panier { 
+.hebergements-cards .hebergement_auberge-le-panier {
     display: flex;
     flex-direction: column;
     margin-top: 33px;
@@ -276,7 +284,7 @@ a {
     width: 100%;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
-    
+
 }
 
 .hebergements-cards .card-content {
@@ -301,9 +309,11 @@ a {
 .hebergements-cards .card-subtitle {
     margin: 0;
 }
+
 .hebergements-cards .card-txt {
     padding-right: 26px;
 }
+
 /****** Populaires ***********/
 .populaires {
     width: 32%;
@@ -355,7 +365,7 @@ a {
 /* Activités */
 
 .activites {
-    
+
     padding: 30px;
 }
 
@@ -364,6 +374,7 @@ a {
     border-radius: 20px 20px 0px 0px;
     width: 100%;
 }
+
 .activites-cards {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -372,6 +383,7 @@ a {
     margin-top: 33px;
     gap: 30px;
 }
+
 .activites-cards .activite_vieux-port,
 .activites-cards .activite_fort-de-pomegues,
 .activites-cards .activite_parc-national-des-calanques,
@@ -391,6 +403,7 @@ a {
     flex: 1;
     box-sizing: border-box;
 }
+
 .activites .section-title {
     margin-top: 35px;
 }
@@ -400,6 +413,7 @@ footer {
     padding: 0 50px;
     margin-top: 35px;
 }
+
 .foot-section {
     display: flex;
     flex-direction: row;
@@ -417,14 +431,13 @@ footer {
 }
 
 ul.no-bullets {
-    list-style-type: none; 
-    padding: 0; 
-    margin: 0; 
-    
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+
 }
 
 li {
     padding-top: 10px;
     padding-bottom: 10px;
 }
-

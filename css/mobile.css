@@ -16,10 +16,10 @@
     }
 
     .logo {
-      align-self: center;
+        align-self: center;
     }
 
-    .main-container{
+    .main-container {
         padding: 0;
     }
 
@@ -27,6 +27,7 @@
         border-bottom: 3.5px solid #0065FC;
         border-top: none;
     }
+
     .menuContainer {
         text-align: center;
         gap: 0px;
@@ -36,8 +37,8 @@
     }
 
     .menuContainer a {
-      padding: 16px;
-      display: block;
+        padding: 16px;
+        display: block;
     }
 
     .searchBar {
@@ -61,12 +62,12 @@
     }
 
     .filterContainer {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
     }
 
     .filterButton {
-      justify-content: start;
+        justify-content: start;
     }
 
     .hebergements-and-populaires {
@@ -74,26 +75,28 @@
         flex-direction: column-reverse;
         padding: 20px;
     }
-    
+
     .cardTop,
     .cardBot {
         display: flex;
         flex-direction: column;
+        grid-template-columns: 1fr;
     }
+
     .searchButtons {
         display: none;
     }
 
     .placeHold {
-      border-radius: 0 15px 15px 0;
-      flex: 1;
-      padding-right: calc(49px + 15px);
+        border-radius: 0 15px 15px 0;
+        flex: 1;
+        padding-right: calc(49px + 15px);
     }
-    
+
     .hebergements {
         width: 100%;
     }
-    
+
     .hebergements-cards .hebergement_hotel-du-port,
     .hebergements-cards .hebergement_hotel-chez-amina,
     .hebergements-cards .hebergement_hotel-les-mouettes,
@@ -108,20 +111,24 @@
         flex-direction: column;
         flex-wrap: nowrap;
     }
+
     .populaires {
         width: 100%;
-        
+
     }
+
     .hebergements-and-populaires section {
         background-color: white;
         border-radius: initial;
     }
+
     .hebergements-and-populaires {
         padding: 0px;
     }
+
     #populairesMob {
-        background-color:#F2F2F2;
-        
+        background-color: #F2F2F2;
+
     }
 
     .activites-cards {
@@ -130,20 +137,23 @@
         justify-content: space-between;
         gap: 30px;
     }
+
     .activites-cards .activite_vieux-port,
     .activites-cards .activite_fort-de-pomegues,
     .activites-cards .activite_parc-national-des-calanques,
     .activites-cards .activite_notre-dame-de-la-garde {
-        width: 90%;
         height: initial;
     }
+
     .activites-cards img {
         height: 133px;
         width: 100%;
     }
+
     .activites-cards .card-content {
         padding-left: 10px;
     }
+
     .foot-section {
         display: flex;
         flex-direction: column;
